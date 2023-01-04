@@ -1,0 +1,14 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Dev1 from './Dev1'
+import Dev2 from './Dev2'
+import Dev3 from './Dev3'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Dev1 />
+    <Dev2 />
+    <Dev3 />
+  </React.StrictMode>,
+)
