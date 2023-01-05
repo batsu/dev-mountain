@@ -1,14 +1,11 @@
 import React, { useState } from "react"
 import Todo from "./Todo"
 import NewTask from "./NewTask"
+import List from "./List"
 
-export default function Dev6() {
+export default function Dev7() {
     const [todoList, setTodoList] = useState([])
 
-
-    let todoElements = todoList.map((item, i) => {
-        return <Todo task={item} index={i} />
-    })
 
     function handleListChange(value) {
         setTodoList([...todoList, value])
@@ -18,9 +15,9 @@ export default function Dev6() {
 
     return (
         <div className="Dev7">
-            <h2>My Todo List:</h2>
+            <h2>My Todo List (Dev7):</h2>
             <NewTask todoList={todoList} handleListChange={handleListChange} />
-            {todoElements}
+            <List todoList={todoList} />
         </div>
     )
 }
