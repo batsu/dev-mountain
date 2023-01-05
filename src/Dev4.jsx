@@ -22,9 +22,9 @@ export default function Dev4() {
     return (
         <div className="div4">
             <form onSubmit={handleSubmit}>
-                <label for="user">Username:</label>
+                <label htmlFor="user">Username:</label>
                 <input type="text" onChange={e => handleUser(e.target.value)}></input>
-                <label for="password">Password:</label>
+                <label htmlFor="password">Password:</label>
                 <input type="password" onChange={e => handlePassword(e.target.value)}></input>
                 <button type="submit">Login</button>
             </form>
