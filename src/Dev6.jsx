@@ -1,11 +1,12 @@
 import React, { useState } from "react"
+import Todo from "./Todo"
 
 export default function Dev6() {
     const [todoList, setTodoList] = useState([])
     const [textInput, setTextInput] = useState("")
 
     let todoElements = todoList.map((item, i) => {
-        return <h2 key={i}>{item}</h2>
+        return <Todo task={item} index={i} />
     })
 
     function handleChange(value) {
