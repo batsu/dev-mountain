@@ -10,11 +10,13 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Dev1 />
-    <Dev2 />
-    <Dev3 />
-    <Dev4 />
-    <Dev5 />
-    <Dev6 />
+    <div className='mainDiv'>
+      <Dev1 />
+      <Dev2 />
+      <Dev3 />
+      <Dev4 />
+      <Dev5 />
+      <Dev6 />
+    </div>
   </React.StrictMode>,
 )

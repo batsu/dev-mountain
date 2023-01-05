@@ -20,8 +20,14 @@ export default function Dev6() {
 
     return (
         <div className="Dev6">
+            <h2>My Todo List:</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={textInput} onChange={(e) => handleChange(e.target.value)}>
+                <input
+                    type="text"
+                    value={textInput}
+                    onChange={(e) => handleChange(e.target.value)}
+                    placeholder="enter some text"
+                >
                 </input>
                 <button type="submit">ADD</button>
             </form>
