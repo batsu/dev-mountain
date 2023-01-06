@@ -10,6 +10,10 @@ import Dev7 from './Dev7'
 import Dev8 from './Dev8'
 import './index.css'
 
+const secret = process.env.NASA_KEY;
+
+console.log(secret)
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className='mainDiv'>
