@@ -2,7 +2,6 @@
   "name": "dev-mountain",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "react-dotenv && vite",
     "build": "react-dotenv && vite build",
