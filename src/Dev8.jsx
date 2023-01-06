@@ -12,7 +12,7 @@ export default function Dev8() {
 
     const getAPIdata = () => {
         // console.log(`https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=${import.meta.env.VITE_NASA_KEY}`)
-        axios.get(`https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=${process.env.VITE_NASA_KEY}`)
+        axios.get(`https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=${process.env.GATSBY_NASA_KEY}`)
             .then(response => {
                 // console.log(response)
                 setObjectName(response.data.near_earth_objects["2015-09-08"][0].name)
