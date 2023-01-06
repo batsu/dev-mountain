@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 export default function Dev1() {
-    const secret = process.env.NASA_KEY;
+    const secret = process.env.VITE_NASA_KEY;
 
     console.log(secret)
     const [text, setText] = useState("")
